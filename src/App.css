@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+.grid-container{
+    display: flex;
+   
+}
+.grid-container .card{
+    display: flex;
+    justify-content: space-around;
+    border: none;
+    
+}
+/* .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    padding: 0px;
+    max-width: 100%;
+    border: none;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 5px 0 0 0;
+  } */
+.impact{
+
+}
+.card{
+    max-width: 600px;
+    border: none;
+}
+.card-title{
+    text-align: left;
+    padding:5px;
+}
+.commentary, .esg{
+    box-shadow: 7px 4px 7px 7px #F1F2ED;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.score_card{
+    box-shadow: 5px 10px whitesmoke;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#auth{
+    background-color:#03A9F4;
+    border:none;
+    color:white;
+    padding:8px;
+    width:500px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+   }
+   div.error{
+    padding: 10px;
+    background: #ffefef;
+    border:1px solid var(--error);
+    color: var(--error);
+    border-radius: 4px;
+    margin:20px 0;
+  }
+  form{
+    margin: auto;
+    max-width: 650px;
+  }
+  .form-control{
+    /* margin:20px; */
+    background-color:whitesmoke;
+    width: 90%;
+  }
+.score_card .card-body{
+    font-size: 1.875rem; /* 30px */
+line-height: 2.25rem; /* 36px */
+text-align:center;
+background-color: #A2F8A4;
+border-color: #A2F8A4;
+padding: 10px;
+padding-top: 0px;
+color:green;
+}
+
+.company-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.company-list .card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    box-shadow: 7px 4px 7px 7px #F1F2ED;
+}
+.thm1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-tip{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    text-align: center;
+    background-color: #BCDBEA;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: default;
+}
+
+.help-tip:before{
+    content:'?';
+    font-weight: bold;
+    color:#fff;
+}
+
+.help-tip:hover p{
+    display:block;
+    transform-origin: 100% 0%;
+
+    -webkit-animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{    /* The tooltip */
+    display: none;
+    text-align: left;
+    background-color: #1E2021;
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    right: -4px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.help-tip p:before{ /* The pointer of the tooltip */
+    position: absolute;
+    content: '';
+    width:0;
+    height: 0;
+    border:6px solid transparent;
+    border-bottom-color:#1E2021;
+    right:10px;
+    top:-12px;
+}
+
+.help-tip p:after{ /* Prevents the tooltip from being hidden */
+    width:100%;
+    height:40px;
+    content:'';
+    position: absolute;
+    top:-40px;
+    left:0;
+}
+.list {
+    list-style-type: none;
+    padding: 0;
+    max-width:600px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:whitesmoke;
+  }
+  
+  .list li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  img, svg{
+    margin-top:4px;
+    font-size: 1.25rem;
+  }
+  
+.thm2{
+    display: flex;
+    justify-content: space-around;
+} 
+
+.scrollarea {
+   min-height: 500px;
+}
+.posts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS animation */
+
+@-webkit-keyframes fadeIn {
+    0% { 
+        opacity:0; 
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity:100%;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:100%; }
+}
